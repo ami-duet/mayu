@@ -1,16 +1,16 @@
 @import url("https://use.typekit.net/grx1euv.css");
 
 $fontPrimary: 'garamond-premier-pro', serif;
-$fontCaption: 'garamond-premier-pro-caption', serif;
 $fontDisplay : 'garamond-premier-pro-display', serif;
-$fontSize: 1.3rem;
+$fontSize: 1.8rem;
 
-h1, h2, h3, h4 {
-  font-weight: 400;
-}
 h1 {
-  margin: 60px 0 20px;
-  font-size: 4.5rem;
+  margin: 65px 0 15px;
+  font-family: $fontDisplay;
+  font-size: 4.2rem;
+  line-height: 0.7;
+  font-weight: 300;
+  color: $textPale;
 }
 h2 {
   margin: 60px 0 20px;

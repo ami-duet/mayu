@@ -12,8 +12,10 @@
 }
 body{
   margin: 0;
+  padding: 0 25px;
   font-family: $fontPrimary;
   font-size: $fontSize;
+  line-height: 1.4;
   font-weight: 400;
   color: $text;
   fill: $text;
