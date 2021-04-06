@@ -1,0 +1,29 @@
+@import url("https://use.typekit.net/grx1euv.css");
+
+$fontPrimary: 'garamond-premier-pro', serif;
+$fontCaption: 'garamond-premier-pro-caption', serif;
+$fontDisplay : 'garamond-premier-pro-display', serif;
+$fontSize: 1.3rem;
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+}
+h1 {
+  margin: 60px 0 20px;
+  font-size: 4.5rem;
+}
+h2 {
+  margin: 60px 0 20px;
+  font-size: 3.5rem;
+}
+h3 {
+  margin: 0 0 10px;
+  font-size: 1.8rem;
+}
+h4 {
+  margin: 0 0 5px;
+  font-size: 1.5rem;
+}
+a {
+  color: $text;
+}
