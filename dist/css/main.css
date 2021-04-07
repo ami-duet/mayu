@@ -1137,7 +1137,7 @@
 
 /* line 7, src/sass/global/_type.scss */
 h1 {
-  margin: 65px 0 15px;
+  margin: 65px 0 -7px;
   font-family: "garamond-premier-pro-display", serif;
   font-size: 4.2rem;
   line-height: 0.7;
@@ -1232,10 +1232,11 @@ button {
 /* line 16, src/sass/components/_intro.scss */
 .intro .credentials {
   margin-right: 30px;
+  font-size: 1.3rem;
   color: #DE886C;
 }
 
-/* line 20, src/sass/components/_intro.scss */
+/* line 21, src/sass/components/_intro.scss */
 .intro .illustration {
   position: absolute;
   z-index: 0;
@@ -1244,7 +1245,7 @@ button {
   width: calc(100% + 90px);
 }
 
-/* line 27, src/sass/components/_intro.scss */
+/* line 28, src/sass/components/_intro.scss */
 .intro .mayu {
   height: 0;
   padding-top: 121%;
@@ -1254,7 +1255,7 @@ button {
   background-size: contain;
 }
 
-/* line 35, src/sass/components/_intro.scss */
+/* line 36, src/sass/components/_intro.scss */
 .intro .signature {
   margin-top: 4px;
   margin-right: 12px;
