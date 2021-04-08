@@ -4,8 +4,8 @@
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 45px;
+  padding-left: 45px;
   width: 100%;
   max-width: 1200px;
 }
@@ -1137,9 +1137,9 @@
 
 /* line 7, src/sass/global/_type.scss */
 h1 {
-  margin: 65px 0 -7px;
+  margin: 0;
   font-family: "garamond-premier-pro-display", serif;
-  font-size: 4.2rem;
+  font-size: 5rem;
   line-height: 0.7;
   font-weight: 300;
   color: #535E5E;
@@ -1188,7 +1188,6 @@ html {
 /* line 13, src/sass/global/_base.scss */
 body {
   margin: 0;
-  padding: 0 25px;
   font-family: "garamond-premier-pro", serif;
   font-size: 1.8rem;
   line-height: 1.4;
@@ -1197,7 +1196,7 @@ body {
   fill: #383838;
 }
 
-/* line 24, src/sass/global/_base.scss */
+/* line 23, src/sass/global/_base.scss */
 input,
 textarea,
 select,
@@ -1208,9 +1207,11 @@ button {
 /* line 1, src/sass/components/_intro.scss */
 .intro {
   position: relative;
+  height: 100vh;
+  padding-top: 30%;
 }
 
-/* line 3, src/sass/components/_intro.scss */
+/* line 5, src/sass/components/_intro.scss */
 .intro h1,
 .intro .credentials {
   position: relative;
@@ -1218,50 +1219,34 @@ button {
   text-align: right;
 }
 
-/* line 9, src/sass/components/_intro.scss */
+/* line 11, src/sass/components/_intro.scss */
 .intro h1 {
   margin-right: 20px;
 }
 
-/* line 11, src/sass/components/_intro.scss */
+/* line 13, src/sass/components/_intro.scss */
 .intro h1 span {
   display: block;
-  margin: 20px 0;
+  padding: 10px 0;
 }
 
-/* line 16, src/sass/components/_intro.scss */
+/* line 18, src/sass/components/_intro.scss */
 .intro .credentials {
   margin-right: 30px;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: #DE886C;
 }
 
-/* line 21, src/sass/components/_intro.scss */
+/* line 23, src/sass/components/_intro.scss */
 .intro .illustration {
   position: absolute;
   z-index: 0;
-  top: 10px;
-  left: -45px;
-  width: calc(100% + 90px);
-}
-
-/* line 28, src/sass/components/_intro.scss */
-.intro .mayu {
-  height: 0;
-  padding-top: 121%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-image: url(../assets/mayu-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: contain;
-}
-
-/* line 36, src/sass/components/_intro.scss */
-.intro .signature {
-  margin-top: 4px;
-  margin-right: 12px;
-  height: 13px;
-  background-image: url(../assets/signature.png);
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-size: contain;
+  background-size: 100% auto;
 }
