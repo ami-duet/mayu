@@ -1,0 +1,20 @@
+.villages {
+  .village {
+    max-width: 375px;
+    margin: 0 auto;
+    .draw {
+      margin-left: -45px;
+      margin-right: -45px;
+      height: 160px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    &.village-cdl .section-community .draw { background-image: url(../assets/villages/cdl/cdl_draw_community.svg); }
+    &.village-cdl .section-school .draw { background-image: url(../assets/villages/cdl/cdl_draw_school.svg); }
+    .description {
+      margin: -1rem 0;
+      padding: 0 20px;
+    }
+  }
+}

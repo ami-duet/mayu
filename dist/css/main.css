@@ -1154,33 +1154,42 @@ h1 {
 
 /* line 18, src/sass/global/_type.scss */
 h2 {
-  margin: 60px 0 20px;
-  font-size: 3.5rem;
+  margin: 60px 0 30px;
+  font-family: "garamond-premier-pro-display", serif;
+  font-size: 2.6rem;
+  font-weight: 400;
+  text-align: center;
+  color: #535E5E;
 }
 
-/* line 22, src/sass/global/_type.scss */
+/* line 26, src/sass/global/_type.scss */
 h3 {
   margin: 0 0 10px;
   font-size: 1.8rem;
 }
 
-/* line 26, src/sass/global/_type.scss */
+/* line 30, src/sass/global/_type.scss */
 h4 {
   margin: 0 0 5px;
   font-size: 1.5rem;
 }
 
-/* line 30, src/sass/global/_type.scss */
+/* line 34, src/sass/global/_type.scss */
 a {
   color: #383838;
 }
 
-/* line 33, src/sass/global/_type.scss */
+/* line 37, src/sass/global/_type.scss */
+p {
+  margin: 1rem 0;
+}
+
+/* line 40, src/sass/global/_type.scss */
 .em {
   font-weight: 600;
 }
 
-/* line 36, src/sass/global/_type.scss */
+/* line 43, src/sass/global/_type.scss */
 .drop-cap {
   position: relative;
   bottom: 6px;
@@ -1330,4 +1339,36 @@ button {
     background-size: 100% auto;
     background-position: center bottom;
   }
+}
+
+/* line 2, src/sass/components/_villages.scss */
+.villages .village {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+/* line 5, src/sass/components/_villages.scss */
+.villages .village .draw {
+  margin-left: -45px;
+  margin-right: -45px;
+  height: 160px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* line 13, src/sass/components/_villages.scss */
+.villages .village.village-cdl .section-community .draw {
+  background-image: url(../assets/villages/cdl/cdl_draw_community.svg);
+}
+
+/* line 14, src/sass/components/_villages.scss */
+.villages .village.village-cdl .section-school .draw {
+  background-image: url(../assets/villages/cdl/cdl_draw_school.svg);
+}
+
+/* line 15, src/sass/components/_villages.scss */
+.villages .village .description {
+  margin: -1rem 0;
+  padding: 0 20px;
 }
