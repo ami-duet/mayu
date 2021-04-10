@@ -1,0 +1,42 @@
+.cover {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin-left: -25px;
+  margin-right: -25px;
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: right;
+    h1 {
+      span {
+        display: block;
+      }
+    }
+    .credentials {
+      margin-right: 75px;
+      font-size: 1.5rem;
+      color: $peach;
+    }
+  }
+  .intro-container {
+    display: flex;
+    justify-content: flex-end;
+    .intro {
+      max-width: 266px;
+    }
+  }
+  .illustration {
+    position: absolute;
+    z-index: 0;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-image: url(../assets/mayu.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: left bottom;
+  }
+}
