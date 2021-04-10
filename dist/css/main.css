@@ -384,7 +384,7 @@
   }
 }
 
-@media (min-width: 990.02px) {
+@media (min-width: 1200.02px) {
   /* line 67, src/sass/global/_grid.scss */
   .col-lg-1 {
     -webkit-box-flex: 0;
@@ -394,7 +394,7 @@
   }
 }
 
-@media (min-width: 990.02px) {
+@media (min-width: 1200.02px) {
   /* line 67, src/sass/global/_grid.scss */
   .col-lg-2 {
     -webkit-box-flex: 0;
@@ -404,7 +404,7 @@
   }
 }
 
-@media (min-width: 990.02px) {
+@media (min-width: 1200.02px) {
   /* line 67, src/sass/global/_grid.scss */
   .col-lg-3 {
     -webkit-box-flex: 0;
@@ -414,7 +414,7 @@
   }
 }
 
-@media (min-width: 990.02px) {
+@media (min-width: 1200.02px) {
   /* line 67, src/sass/global/_grid.scss */
   .col-lg-4 {
     -webkit-box-flex: 0;
@@ -424,7 +424,7 @@
   }
 }
 
-@media (min-width: 990.02px) {
+@media (min-width: 1200.02px) {
   /* line 67, src/sass/global/_grid.scss */
   .col-lg-5 {
     -webkit-box-flex: 0;
@@ -434,7 +434,7 @@
   }
 }
 
-@media (min-width: 990.02px) {
+@media (min-width: 1200.02px) {
   /* line 67, src/sass/global/_grid.scss */
   .col-lg-6 {
     -webkit-box-flex: 0;
@@ -444,7 +444,7 @@
   }
 }
 
-@media (min-width: 990.02px) {
+@media (min-width: 1200.02px) {
   /* line 67, src/sass/global/_grid.scss */
   .col-lg-7 {
     -webkit-box-flex: 0;
@@ -454,7 +454,7 @@
   }
 }
 
-@media (min-width: 990.02px) {
+@media (min-width: 1200.02px) {
   /* line 67, src/sass/global/_grid.scss */
   .col-lg-8 {
     -webkit-box-flex: 0;
@@ -464,7 +464,7 @@
   }
 }
 
-@media (min-width: 990.02px) {
+@media (min-width: 1200.02px) {
   /* line 67, src/sass/global/_grid.scss */
   .col-lg-9 {
     -webkit-box-flex: 0;
@@ -474,7 +474,7 @@
   }
 }
 
-@media (min-width: 990.02px) {
+@media (min-width: 1200.02px) {
   /* line 67, src/sass/global/_grid.scss */
   .col-lg-10 {
     -webkit-box-flex: 0;
@@ -484,7 +484,7 @@
   }
 }
 
-@media (min-width: 990.02px) {
+@media (min-width: 1200.02px) {
   /* line 67, src/sass/global/_grid.scss */
   .col-lg-11 {
     -webkit-box-flex: 0;
@@ -494,7 +494,7 @@
   }
 }
 
-@media (min-width: 990.02px) {
+@media (min-width: 1200.02px) {
   /* line 67, src/sass/global/_grid.scss */
   .col-lg-12 {
     -webkit-box-flex: 0;
@@ -792,84 +792,84 @@
   }
 }
 
-@media (min-width: 990.02px) {
+@media (min-width: 1200.02px) {
   /* line 99, src/sass/global/_grid.scss */
   .offset-lg-1 {
     margin-left: 8.33333%;
   }
 }
 
-@media (min-width: 990.02px) {
+@media (min-width: 1200.02px) {
   /* line 99, src/sass/global/_grid.scss */
   .offset-lg-2 {
     margin-left: 16.66667%;
   }
 }
 
-@media (min-width: 990.02px) {
+@media (min-width: 1200.02px) {
   /* line 99, src/sass/global/_grid.scss */
   .offset-lg-3 {
     margin-left: 25%;
   }
 }
 
-@media (min-width: 990.02px) {
+@media (min-width: 1200.02px) {
   /* line 99, src/sass/global/_grid.scss */
   .offset-lg-4 {
     margin-left: 33.33333%;
   }
 }
 
-@media (min-width: 990.02px) {
+@media (min-width: 1200.02px) {
   /* line 99, src/sass/global/_grid.scss */
   .offset-lg-5 {
     margin-left: 41.66667%;
   }
 }
 
-@media (min-width: 990.02px) {
+@media (min-width: 1200.02px) {
   /* line 99, src/sass/global/_grid.scss */
   .offset-lg-6 {
     margin-left: 50%;
   }
 }
 
-@media (min-width: 990.02px) {
+@media (min-width: 1200.02px) {
   /* line 99, src/sass/global/_grid.scss */
   .offset-lg-7 {
     margin-left: 58.33333%;
   }
 }
 
-@media (min-width: 990.02px) {
+@media (min-width: 1200.02px) {
   /* line 99, src/sass/global/_grid.scss */
   .offset-lg-8 {
     margin-left: 66.66667%;
   }
 }
 
-@media (min-width: 990.02px) {
+@media (min-width: 1200.02px) {
   /* line 99, src/sass/global/_grid.scss */
   .offset-lg-9 {
     margin-left: 75%;
   }
 }
 
-@media (min-width: 990.02px) {
+@media (min-width: 1200.02px) {
   /* line 99, src/sass/global/_grid.scss */
   .offset-lg-10 {
     margin-left: 83.33333%;
   }
 }
 
-@media (min-width: 990.02px) {
+@media (min-width: 1200.02px) {
   /* line 99, src/sass/global/_grid.scss */
   .offset-lg-11 {
     margin-left: 91.66667%;
   }
 }
 
-@media (min-width: 990.02px) {
+@media (min-width: 1200.02px) {
   /* line 99, src/sass/global/_grid.scss */
   .offset-lg-12 {
     margin-left: 100%;
@@ -1145,39 +1145,47 @@ h1 {
   color: #535E5E;
 }
 
-/* line 15, src/sass/global/_type.scss */
+@media screen and (max-width: 1200px) {
+  /* line 7, src/sass/global/_type.scss */
+  h1 {
+    font-size: 4.2rem;
+  }
+}
+
+/* line 18, src/sass/global/_type.scss */
 h2 {
   margin: 60px 0 20px;
   font-size: 3.5rem;
 }
 
-/* line 19, src/sass/global/_type.scss */
+/* line 22, src/sass/global/_type.scss */
 h3 {
   margin: 0 0 10px;
   font-size: 1.8rem;
 }
 
-/* line 23, src/sass/global/_type.scss */
+/* line 26, src/sass/global/_type.scss */
 h4 {
   margin: 0 0 5px;
   font-size: 1.5rem;
 }
 
-/* line 27, src/sass/global/_type.scss */
+/* line 30, src/sass/global/_type.scss */
 a {
   color: #383838;
 }
 
-/* line 30, src/sass/global/_type.scss */
+/* line 33, src/sass/global/_type.scss */
 .em {
   font-weight: 600;
 }
 
-/* line 33, src/sass/global/_type.scss */
+/* line 36, src/sass/global/_type.scss */
 .drop-cap {
   position: relative;
   bottom: 6px;
   font-size: 34px;
+  line-height: 1;
 }
 
 /**
@@ -1200,7 +1208,6 @@ html {
 /* line 13, src/sass/global/_base.scss */
 body {
   margin: 0;
-  padding: 0 25px;
   font-family: "garamond-premier-pro", serif;
   font-size: 1.8rem;
   line-height: 1.4;
@@ -1209,7 +1216,7 @@ body {
   fill: #383838;
 }
 
-/* line 24, src/sass/global/_base.scss */
+/* line 23, src/sass/global/_base.scss */
 input,
 textarea,
 select,
@@ -1228,11 +1235,9 @@ button {
           align-items: center;
   width: 100vw;
   height: 100vh;
-  margin-left: -25px;
-  margin-right: -25px;
 }
 
-/* line 9, src/sass/components/_cover.scss */
+/* line 7, src/sass/components/_cover.scss */
 .cover .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1248,19 +1253,19 @@ button {
   text-align: right;
 }
 
-/* line 16, src/sass/components/_cover.scss */
+/* line 14, src/sass/components/_cover.scss */
 .cover .title h1 span {
   display: block;
 }
 
-/* line 20, src/sass/components/_cover.scss */
+/* line 18, src/sass/components/_cover.scss */
 .cover .title .credentials {
   margin-right: 75px;
   font-size: 1.5rem;
   color: #DE886C;
 }
 
-/* line 26, src/sass/components/_cover.scss */
+/* line 24, src/sass/components/_cover.scss */
 .cover .intro-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1270,12 +1275,12 @@ button {
           justify-content: flex-end;
 }
 
-/* line 29, src/sass/components/_cover.scss */
+/* line 27, src/sass/components/_cover.scss */
 .cover .intro-container .intro {
   max-width: 266px;
 }
 
-/* line 33, src/sass/components/_cover.scss */
+/* line 31, src/sass/components/_cover.scss */
 .cover .illustration {
   position: absolute;
   z-index: 0;
@@ -1287,4 +1292,42 @@ button {
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: left bottom;
+}
+
+@media screen and (max-width: 1200px) {
+  /* line 1, src/sass/components/_cover.scss */
+  .cover {
+    height: auto;
+  }
+  /* line 42, src/sass/components/_cover.scss */
+  .cover .title {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-right: 20px;
+    padding-top: 20vh;
+    height: 100vh;
+  }
+  /* line 47, src/sass/components/_cover.scss */
+  .cover .title .credentials {
+    margin-top: 5px;
+    margin-right: 9px;
+    font-size: 1.3rem;
+  }
+  /* line 53, src/sass/components/_cover.scss */
+  .cover .intro-container {
+    padding-top: 40px;
+  }
+  /* line 55, src/sass/components/_cover.scss */
+  .cover .intro-container .intro {
+    max-width: none;
+  }
+  /* line 59, src/sass/components/_cover.scss */
+  .cover .illustration {
+    bottom: auto;
+    height: 100vh;
+    background-image: url(../assets/mayu-mobile.jpg);
+    background-size: 100% auto;
+    background-position: center bottom;
+  }
 }

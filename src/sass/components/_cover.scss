@@ -4,8 +4,6 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  margin-left: -25px;
-  margin-right: -25px;
   .title {
     display: flex;
     flex-direction: column;
@@ -38,5 +36,32 @@
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: left bottom;
+  }
+  @media screen and (max-width: $lg) {
+    height: auto;
+    .title {
+      justify-content: flex-start;
+      margin-right: 20px;
+      padding-top: 20vh;
+      height: 100vh;
+      .credentials {
+        margin-top: 5px;
+        margin-right: 9px;
+        font-size: 1.3rem;
+      }
+    }
+    .intro-container {
+      padding-top: 40px;
+      .intro {
+        max-width: none;
+      }
+    }
+    .illustration {
+      bottom: auto;
+      height: 100vh;
+      background-image: url(../assets/mayu-mobile.jpg);
+      background-size: 100% auto;
+      background-position: center bottom;
+    }
   }
 }
