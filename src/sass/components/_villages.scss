@@ -12,9 +12,23 @@
     }
     &.village-cdl .section-community .draw { background-image: url(../assets/villages/cdl/cdl_draw_community.svg); }
     &.village-cdl .section-school .draw { background-image: url(../assets/villages/cdl/cdl_draw_school.svg); }
+    &.village-cdl .section-distance .draw { background-image: url(../assets/villages/cdl/cdl_draw_distance.svg); }
+    &.village-cdl .section-waterMCL .draw { background-image: url(../assets/villages/cdl/cdl_draw_waterMCL.svg); }
+    &.village-cdl .section-solution .draw { background-image: url(../assets/villages/cdl/cdl_draw_solution.svg); }
+    &.village-cdl .section-coloring .draw { background-image: url(../assets/villages/cdl/cdl_draw_coloring.svg); }
     .description {
       margin: -1rem 0;
       padding: 0 20px;
+    }
+    .defs {
+      font-size: 1.5rem;
+      line-height: 1.2;
+      .def {
+        margin: 15px 0;
+        p {
+          margin: 0.7rem 0;
+        }
+      }
     }
   }
 }
