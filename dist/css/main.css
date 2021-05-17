@@ -1378,29 +1378,46 @@ footer {
 }
 
 /* line 2, src/sass/components/_villages.scss */
+.villages .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+/* line 6, src/sass/components/_villages.scss */
 .villages .village {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+/* line 9, src/sass/components/_villages.scss */
+.villages .village .village-container {
+  width: 100%;
   max-width: 400px;
   margin: 0 auto;
 }
 
-/* line 5, src/sass/components/_villages.scss */
+/* line 14, src/sass/components/_villages.scss */
 .villages .village .sct-description {
   margin: -1.5rem auto;
   max-width: 280px;
 }
 
-/* line 9, src/sass/components/_villages.scss */
+/* line 18, src/sass/components/_villages.scss */
 .villages .village .defs {
   font-size: 1.5rem;
   line-height: 1.2;
 }
 
-/* line 12, src/sass/components/_villages.scss */
+/* line 21, src/sass/components/_villages.scss */
 .villages .village .defs .def {
   margin: 15px 0;
 }
 
-/* line 14, src/sass/components/_villages.scss */
+/* line 23, src/sass/components/_villages.scss */
 .villages .village .defs .def p {
   margin: 0.7rem 0;
 }

@@ -1,7 +1,16 @@
 .villages {
+  .container {
+    display: flex;
+    overflow: hidden;
+  }
   .village {
-    max-width: 400px;
-    margin: 0 auto;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    .village-container {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
     .sct-description {
       margin: -1.5rem auto;
       max-width: 280px;

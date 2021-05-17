@@ -5,7 +5,9 @@ const villages = d3.select('.villages')
   .selectAll('.village')
   .data(villagesData)
   .join('div')
-    .attr('class', d => `village village-${d.village_id}`);
+    .attr('class', d => `village village-${d.village_id}`)
+  .append('div')
+    .attr('class', 'village-container');
 villages
   .append('h2')
     .text(d => d.village_name);
