@@ -1139,16 +1139,16 @@
 h1 {
   margin: 0;
   font-family: "garamond-premier-pro-display", serif;
-  font-size: 7rem;
-  line-height: 1.2;
+  font-size: 8rem;
+  line-height: 1;
   font-weight: 300;
   color: #535E5E;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 576px) {
   /* line 7, src/sass/global/_type.scss */
   h1 {
-    font-size: 4.2rem;
+    font-size: 5rem;
   }
 }
 
@@ -1181,7 +1181,7 @@ a {
 
 /* line 37, src/sass/global/_type.scss */
 p {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 /* line 40, src/sass/global/_type.scss */
@@ -1191,10 +1191,14 @@ p {
 
 /* line 43, src/sass/global/_type.scss */
 .drop-cap {
-  position: relative;
-  bottom: 6px;
   font-size: 34px;
   line-height: 1;
+}
+
+/* line 46, src/sass/global/_type.scss */
+.drop-cap.close {
+  position: relative;
+  right: -2px;
 }
 
 /**
@@ -1269,8 +1273,8 @@ button {
 
 /* line 18, src/sass/components/_cover.scss */
 .cover .title .credentials {
-  margin-right: 75px;
-  font-size: 1.5rem;
+  margin-right: 96px;
+  font-size: 1.6rem;
   color: #DE886C;
 }
 
@@ -1286,10 +1290,15 @@ button {
 
 /* line 27, src/sass/components/_cover.scss */
 .cover .intro-container .intro {
-  max-width: 266px;
+  max-width: 215px;
 }
 
-/* line 31, src/sass/components/_cover.scss */
+/* line 29, src/sass/components/_cover.scss */
+.cover .intro-container .intro p {
+  text-indent: 35px;
+}
+
+/* line 34, src/sass/components/_cover.scss */
 .cover .illustration {
   position: absolute;
   z-index: 0;
@@ -1299,8 +1308,22 @@ button {
   left: 0;
   background-image: url(../assets/mayu.jpg);
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: calc(110% - 700px) auto;
   background-position: left bottom;
+}
+
+@media screen and (max-width: 1700px) {
+  /* line 34, src/sass/components/_cover.scss */
+  .cover .illustration {
+    background-size: calc(125% - 700px) auto;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  /* line 34, src/sass/components/_cover.scss */
+  .cover .illustration {
+    background-size: 75% auto;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1308,36 +1331,39 @@ button {
   .cover {
     height: auto;
   }
-  /* line 42, src/sass/components/_cover.scss */
+  /* line 51, src/sass/components/_cover.scss */
   .cover .title {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin-right: 20px;
-    padding-top: 20vh;
+    padding-top: 33vh;
     height: 100vh;
   }
-  /* line 47, src/sass/components/_cover.scss */
-  .cover .title .credentials {
-    margin-top: 5px;
-    margin-right: 9px;
-    font-size: 1.3rem;
-  }
-  /* line 53, src/sass/components/_cover.scss */
+  /* line 57, src/sass/components/_cover.scss */
   .cover .intro-container {
     padding-top: 40px;
   }
-  /* line 55, src/sass/components/_cover.scss */
+  /* line 59, src/sass/components/_cover.scss */
   .cover .intro-container .intro {
     max-width: none;
   }
-  /* line 59, src/sass/components/_cover.scss */
+  /* line 63, src/sass/components/_cover.scss */
   .cover .illustration {
     bottom: auto;
     height: 100vh;
     background-image: url(../assets/mayu-mobile.jpg);
     background-size: 100% auto;
     background-position: center bottom;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* line 73, src/sass/components/_cover.scss */
+  .cover .title .credentials {
+    margin-top: 2px;
+    margin-right: 18px;
+    font-size: 1.5rem;
   }
 }
 

@@ -7,12 +7,12 @@ $fontSize: 1.8rem;
 h1 {
   margin: 0;
   font-family: $fontDisplay;
-  font-size: 7rem;
-  line-height: 1.2;
+  font-size: 8rem;
+  line-height: 1;
   font-weight: 300;
   color: $textPale;
-  @media screen and (max-width: $lg) {
-    font-size: 4.2rem;
+  @media screen and (max-width: $sm) {
+    font-size: 5rem;
   }
 }
 h2 {
@@ -35,14 +35,16 @@ a {
   color: $text;
 }
 p {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 .em {
   font-weight: 600;
 }
 .drop-cap {
-  position: relative;
-  bottom: 6px;
   font-size: 34px;
   line-height: 1;
+  &.close {
+    position: relative;
+    right: -2px;
+  }
 }

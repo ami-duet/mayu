@@ -16,8 +16,8 @@
       }
     }
     .credentials {
-      margin-right: 75px;
-      font-size: 1.5rem;
+      margin-right: 96px;
+      font-size: 1.6rem;
       color: $peach;
     }
   }
@@ -25,7 +25,10 @@
     display: flex;
     justify-content: flex-end;
     .intro {
-      max-width: 266px;
+      max-width: 215px;
+      p {
+        text-indent: 35px;
+      }
     }
   }
   .illustration {
@@ -34,21 +37,22 @@
     top: 0; right: 0; bottom: 0; left: 0;
     background-image: url(../assets/mayu.jpg);
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: calc(110% - 700px) auto;
     background-position: left bottom;
+    @media screen and (max-width: 1700px) {
+      background-size: calc(125% - 700px) auto;
+    }
+    @media screen and (max-width: 1400px) {
+      background-size: 75% auto;
+    }
   }
   @media screen and (max-width: $lg) {
     height: auto;
     .title {
       justify-content: flex-start;
       margin-right: 20px;
-      padding-top: 20vh;
+      padding-top: 33vh;
       height: 100vh;
-      .credentials {
-        margin-top: 5px;
-        margin-right: 9px;
-        font-size: 1.3rem;
-      }
     }
     .intro-container {
       padding-top: 40px;
@@ -62,6 +66,15 @@
       background-image: url(../assets/mayu-mobile.jpg);
       background-size: 100% auto;
       background-position: center bottom;
+    }
+  }
+  @media screen and (max-width: $sm) {
+    .title {
+      .credentials {
+        margin-top: 2px;
+        margin-right: 18px;
+        font-size: 1.5rem;
+      }
     }
   }
 }
