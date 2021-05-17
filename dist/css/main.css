@@ -1379,68 +1379,28 @@ footer {
 
 /* line 2, src/sass/components/_villages.scss */
 .villages .village {
-  max-width: 375px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
 /* line 5, src/sass/components/_villages.scss */
-.villages .village .draw {
-  margin-left: -45px;
-  margin-right: -45px;
-  height: 160px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+.villages .village .sct-description {
+  margin: -1.5rem auto;
+  max-width: 280px;
 }
 
-/* line 13, src/sass/components/_villages.scss */
-.villages .village.village-cdl .section-community .draw {
-  background-image: url(../assets/villages/cdl/cdl_draw_community.svg);
-}
-
-/* line 14, src/sass/components/_villages.scss */
-.villages .village.village-cdl .section-school .draw {
-  background-image: url(../assets/villages/cdl/cdl_draw_school.svg);
-}
-
-/* line 15, src/sass/components/_villages.scss */
-.villages .village.village-cdl .section-distance .draw {
-  background-image: url(../assets/villages/cdl/cdl_draw_distance.svg);
-}
-
-/* line 16, src/sass/components/_villages.scss */
-.villages .village.village-cdl .section-waterMCL .draw {
-  background-image: url(../assets/villages/cdl/cdl_draw_waterMCL.svg);
-}
-
-/* line 17, src/sass/components/_villages.scss */
-.villages .village.village-cdl .section-solution .draw {
-  background-image: url(../assets/villages/cdl/cdl_draw_solution.svg);
-}
-
-/* line 18, src/sass/components/_villages.scss */
-.villages .village.village-cdl .section-coloring .draw {
-  background-image: url(../assets/villages/cdl/cdl_draw_coloring.svg);
-}
-
-/* line 19, src/sass/components/_villages.scss */
-.villages .village .description {
-  margin: -1rem 0;
-  padding: 0 20px;
-}
-
-/* line 23, src/sass/components/_villages.scss */
+/* line 9, src/sass/components/_villages.scss */
 .villages .village .defs {
   font-size: 1.5rem;
   line-height: 1.2;
 }
 
-/* line 26, src/sass/components/_villages.scss */
+/* line 12, src/sass/components/_villages.scss */
 .villages .village .defs .def {
   margin: 15px 0;
 }
 
-/* line 28, src/sass/components/_villages.scss */
+/* line 14, src/sass/components/_villages.scss */
 .villages .village .defs .def p {
   margin: 0.7rem 0;
 }
