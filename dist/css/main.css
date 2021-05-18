@@ -1385,7 +1385,15 @@ footer {
   overflow: hidden;
 }
 
-/* line 6, src/sass/components/_villages.scss */
+@media screen and (max-width: 768px) {
+  /* line 2, src/sass/components/_villages.scss */
+  .villages .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+/* line 10, src/sass/components/_villages.scss */
 .villages .village {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 33.33%;
@@ -1393,31 +1401,71 @@ footer {
   max-width: 33.33%;
 }
 
-/* line 9, src/sass/components/_villages.scss */
+/* line 13, src/sass/components/_villages.scss */
 .villages .village .village-container {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
 }
 
-/* line 14, src/sass/components/_villages.scss */
+/* line 18, src/sass/components/_villages.scss */
 .villages .village .sct-description {
   margin: -1.5rem auto;
-  max-width: 280px;
+  max-width: 270px;
 }
 
-/* line 18, src/sass/components/_villages.scss */
+/* line 22, src/sass/components/_villages.scss */
+.villages .village .section-community .sct-description {
+  min-height: 75px;
+}
+
+/* line 23, src/sass/components/_villages.scss */
+.villages .village .section-school .sct-description {
+  min-height: 140px;
+}
+
+/* line 24, src/sass/components/_villages.scss */
+.villages .village .section-distance .sct-description {
+  min-height: 190px;
+}
+
+/* line 25, src/sass/components/_villages.scss */
+.villages .village .section-waterMCL .sct-description {
+  min-height: 560px;
+}
+
+/* line 26, src/sass/components/_villages.scss */
+.villages .village .section-solution .sct-description {
+  min-height: 483px;
+}
+
+/* line 27, src/sass/components/_villages.scss */
+.villages .village .section-coloring .sct-description {
+  min-height: 350px;
+}
+
+/* line 28, src/sass/components/_villages.scss */
 .villages .village .defs {
   font-size: 1.5rem;
   line-height: 1.2;
 }
 
-/* line 21, src/sass/components/_villages.scss */
+/* line 31, src/sass/components/_villages.scss */
 .villages .village .defs .def {
   margin: 15px 0;
 }
 
-/* line 23, src/sass/components/_villages.scss */
+/* line 33, src/sass/components/_villages.scss */
 .villages .village .defs .def p {
   margin: 0.7rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 10, src/sass/components/_villages.scss */
+  .villages .village {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
 }

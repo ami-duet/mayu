@@ -2,6 +2,10 @@
   .container {
     display: flex;
     overflow: hidden;
+    @media screen and (max-width: $md) {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
   }
   .village {
     flex: 0 0 33.33%;
@@ -13,8 +17,14 @@
     }
     .sct-description {
       margin: -1.5rem auto;
-      max-width: 280px;
+      max-width: 270px;
     }
+    .section-community .sct-description { min-height: 75px; }
+    .section-school .sct-description { min-height: 140px; }
+    .section-distance .sct-description { min-height: 190px; }
+    .section-waterMCL .sct-description { min-height: 560px; }
+    .section-solution .sct-description { min-height: 483px; }
+    .section-coloring .sct-description { min-height: 350px; }
     .defs {
       font-size: 1.5rem;
       line-height: 1.2;
@@ -24,6 +34,10 @@
           margin: 0.7rem 0;
         }
       }
+    }
+    @media screen and (max-width: $md) {
+      flex: 0 0 100%;
+      max-width: 100%;
     }
   }
 }
