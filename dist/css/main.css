@@ -1609,9 +1609,17 @@ button {
           user-select: none;
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: transparent;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
 }
 
-/* line 29, src/sass/components/_glide.scss */
+/* line 31, src/sass/components/_glide.scss */
+.glide__slide.glide__slide--active {
+  opacity: 1;
+}
+
+/* line 35, src/sass/components/_glide.scss */
 .glide__slide a {
   -webkit-user-select: none;
           user-select: none;
@@ -1620,7 +1628,7 @@ button {
   -ms-user-select: none;
 }
 
-/* line 34, src/sass/components/_glide.scss */
+/* line 40, src/sass/components/_glide.scss */
 .glide__arrows {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -1630,7 +1638,7 @@ button {
   position: absolute;
 }
 
-/* line 38, src/sass/components/_glide.scss */
+/* line 44, src/sass/components/_glide.scss */
 .glide__arrows .glide__arrow {
   -webkit-appearance: none;
   position: fixed;
@@ -1645,7 +1653,7 @@ button {
   cursor: pointer;
 }
 
-/* line 50, src/sass/components/_glide.scss */
+/* line 56, src/sass/components/_glide.scss */
 .glide__arrows .glide__arrow .btn-label {
   display: block;
   -webkit-transform: translateX(0);
@@ -1656,36 +1664,36 @@ button {
   transition: transform 200ms cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-transform 200ms cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
-/* line 55, src/sass/components/_glide.scss */
+/* line 61, src/sass/components/_glide.scss */
 .glide__arrows .glide__arrow.glide__arrow--left {
   left: calc(50% - 500px);
   text-align: right;
 }
 
-/* line 59, src/sass/components/_glide.scss */
+/* line 65, src/sass/components/_glide.scss */
 .glide__arrows .glide__arrow.glide__arrow--left:hover .btn-label {
   -webkit-transform: translateX(-20px);
           transform: translateX(-20px);
 }
 
-/* line 64, src/sass/components/_glide.scss */
+/* line 70, src/sass/components/_glide.scss */
 .glide__arrows .glide__arrow.glide__arrow--right {
   left: calc(50% + 300px);
   text-align: left;
 }
 
-/* line 68, src/sass/components/_glide.scss */
+/* line 74, src/sass/components/_glide.scss */
 .glide__arrows .glide__arrow.glide__arrow--right:hover .btn-label {
   -webkit-transform: translateX(20px);
           transform: translateX(20px);
 }
 
-/* line 74, src/sass/components/_glide.scss */
+/* line 80, src/sass/components/_glide.scss */
 .glide__arrows.hidden {
   opacity: 0;
 }
 
-/* line 94, src/sass/components/_glide.scss */
+/* line 100, src/sass/components/_glide.scss */
 .glide__bullets {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -1694,7 +1702,7 @@ button {
           user-select: none;
 }
 
-/* line 97, src/sass/components/_glide.scss */
+/* line 103, src/sass/components/_glide.scss */
 .glide--rtl {
   direction: rtl;
 }

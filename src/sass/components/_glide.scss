@@ -25,7 +25,13 @@
     white-space: normal;
     user-select: none;
     -webkit-touch-callout: none;
-    -webkit-tap-highlight-color: transparent; }
+    -webkit-tap-highlight-color: transparent;
+    opacity: 0;
+    transition: opacity 400ms ease-in-out;
+    &.glide__slide--active {
+      opacity: 1;
+    }
+  }
     .glide__slide a {
       user-select: none;
       -webkit-user-drag: none;
