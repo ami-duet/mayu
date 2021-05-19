@@ -1,5 +1,6 @@
 /*! project-name v0.0.1 | (c) 2021 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
-const firstVillage = 'cerro_de_leones';
+const firstVillageId = 'cerro_de_leones';
+const firstVillageIndex = villagesData.findIndex(village => village.village_id === firstVillageId);
 
 // Append villages illustrations and descriptions
 const villages = d3.select('.glide__slides')
@@ -30,25 +31,30 @@ section
   .html(d => d.description);
 
 // Initialize the carousel
-new Glide('.glide', {
+const carousel = new Glide('.glide', {
   type: 'carousel',
   focusAt: 'center',
   perView: 1,
-  startAt: villagesData.findIndex(village => village.village_id === firstVillage)
+  startAt: firstVillageIndex
 }).mount();
 
-// Once the carousel is in view, show arrows
-const isElementInViewport = (el) => {
-  // From https://stackoverflow.com/questions/123999/how-can-i-tell-if-a-dom-element-is-visible-in-the-current-viewport/7557433#7557433
-  const rect = el.getBoundingClientRect();
-  return (
-      rect.top <= 500 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
+// Swap carousel button's text for the villages names
+const updateCarouselButtons = (index) => {
+  const prevVillage = villagesData[index - 1] ? villagesData[index - 1] : villagesData[villagesData.length - 1];
+  d3.select('.glide__arrow--left .btn-label')
+    .text(prevVillage.village_name);
+
+  const nextVillage = villagesData[index + 1] ? villagesData[index + 1] : villagesData[0];
+  d3.select('.glide__arrow--right .btn-label')
+    .text(nextVillage.village_name);
 };
 
+updateCarouselButtons(firstVillageIndex);
+carousel.on('run', () => {
+  updateCarouselButtons(carousel.index);
+});
+
+// Once the carousel is in view, show arrows
 const arrowsToggle = document.querySelector('.arrows-toggle');
 const carouselArrows = document.querySelector('.glide__arrows');
 window.addEventListener('scroll', () => {
