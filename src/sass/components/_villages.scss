@@ -8,19 +8,12 @@
     }
   }
   .village {
-    // flex: 0 0 33.33%;
-    // max-width: 33.33%;
-    // .village-container {
-    //   width: 100%;
-    //   max-width: 400px;
-    //   margin: 0 auto;
-    // }
     .sct-description {
       margin: -1.5rem auto;
       max-width: 270px;
     }
-    .section-community .sct-description { min-height: 75px; }
-    .section-school .sct-description { min-height: 165px; }
+    .section-community .sct-description { min-height: 107px; }
+    .section-school .sct-description { min-height: 197px; }
     .section-distance .sct-description { min-height: 190px; }
     .section-waterMCL .sct-description { min-height: 560px; }
     .section-solution .sct-description { min-height: 483px; }
