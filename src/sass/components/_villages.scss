@@ -1,13 +1,20 @@
 .villages {
   .container {
     display: flex;
-    overflow: hidden;
     @media screen and (max-width: $md) {
       padding-right: 20px;
       padding-left: 20px;
     }
   }
   .village {
+    margin: 0 auto;
+    max-width: 400px;
+    h2 {
+      position: sticky;
+      top: -1px;
+      background: rgb(255,255,255);
+      background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 100%);
+    }
     .sct-description {
       margin: -1.5rem auto;
       max-width: 270px;
@@ -19,6 +26,8 @@
     .section-solution .sct-description { min-height: 483px; }
     .section-coloring .sct-description { min-height: 350px; }
     .defs {
+      position: relative;
+      z-index: -1;
       font-size: 1.5rem;
       line-height: 1.2;
       .def {
