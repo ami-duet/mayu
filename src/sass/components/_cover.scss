@@ -66,6 +66,15 @@
       background-image: url(../assets/mayu-mobile.jpg);
       background-size: 100% auto;
       background-position: center bottom;
+      @media (orientation: landscape) {
+        width: 60vw;
+      }
+      @media (orientation: landscape) and (min-width: 800px) {
+        width: 56vw;
+      }
+      @media (orientation: landscape) and (min-width: 1000px) {
+        width: 75vw;
+      }
     }
   }
   @media screen and (max-width: $sm) {
