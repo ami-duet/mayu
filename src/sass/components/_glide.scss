@@ -27,9 +27,9 @@
     -webkit-touch-callout: none;
     -webkit-tap-highlight-color: transparent;
     opacity: 0;
-    transition: opacity 400ms ease-in-out;
     &.glide__slide--active {
       opacity: 1;
+      transition: opacity 400ms ease-out;
     }
   }
     .glide__slide a {
@@ -44,6 +44,7 @@
     .glide__arrow {
       -webkit-appearance: none;
       position: fixed;
+      z-index: 101;
       top: 50%;
       width: 185px;
       padding: 8px 5px 7px;
@@ -59,7 +60,7 @@
         transition: transform 200ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
       }
       &.glide__arrow--left {
-        left: calc(50% - 500px);
+        left: calc(50% - 480px);
         text-align: right;
         &:hover {
           .btn-label {
@@ -68,12 +69,34 @@
         }
       }
       &.glide__arrow--right {
-        left: calc(50% + 300px);
+        left: calc(50% + 295px);
         text-align: left;
         &:hover {
           .btn-label {
             transform: translateX(20px);
           }
+        }
+      }
+      @media screen and (max-width: 1100px) {
+        top: 38px;
+        width: 10px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-bottom: none;
+        .btn-label {
+          display: none;
+        }
+        &.glide__arrow--left {
+          left: 20px;
+          background-image: url(../assets/arrow_left.svg);
+          background-position: left center;
+        }
+        &.glide__arrow--right {
+          left: auto;
+          right: 20px;
+          background-image: url(../assets/arrow_right.svg);
+          background-position: right center;
         }
       }
     }
@@ -82,10 +105,10 @@
     }
     &.enter {
       .glide__arrow--left {
-        @extend .bounce-in-left;
+        @extend .slide-in-blurred-left;
       }
       .glide__arrow--right {
-        @extend .bounce-in-right;
+        @extend .slide-in-blurred-right;
       }
     }
     &.exit {

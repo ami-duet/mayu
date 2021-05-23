@@ -1,6 +1,12 @@
 /*! project-name v0.0.1 | (c) 2021 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
 const firstVillageId = 'cerro_de_leones';
+const currentVillageId = 'cerro_de_leones';
 const firstVillageIndex = villagesData.findIndex(village => village.village_id === firstVillageId);
+const arrowsToggle = document.querySelector('.arrows-toggle');
+const carouselArrows = document.querySelector('.glide__arrows');
+
+let largeScreen = window.innerWidth > 1100 ? true : false;
+let villageNameIsSticky = false;
 
 // Append villages illustrations and descriptions
 const villages = d3.select('.glide__slides')
@@ -30,6 +36,11 @@ section
     .attr('class', 'sct-description')
   .html(d => d.description);
 
+currentVillage = d3.select('.current-village');
+currentVillage
+  .append('h2')
+    .text(villagesData.find(village => village.village_id === currentVillageId).village_name);
+
 // Initialize the carousel
 const carousel = new Glide('.glide', {
   type: 'carousel',
@@ -49,28 +60,60 @@ const updateCarouselButtons = (index) => {
     .text(nextVillage.village_name);
 };
 
-updateCarouselButtons(firstVillageIndex);
-carousel.on('run', () => {
+// Update name of current village
+const updateCurrentVillage = (index) => {
+  currentVillage.select('h2')
+    .text(villagesData[index].village_name);
+};
+
+if (window.innerWidth > 1100) {
   updateCarouselButtons(carousel.index);
+}
+carousel.on('run', () => {
+  if (window.innerWidth > 1100) {
+    updateCarouselButtons(carousel.index);
+  }
+  updateCurrentVillage(carousel.index);
 });
 
-// Once the carousel is in view, show arrows
-const arrowsToggle = document.querySelector('.arrows-toggle');
-const carouselArrows = document.querySelector('.glide__arrows');
+
+// Update variables on window resize
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 1100 && !largeScreen) {
+    largeScreen = true;
+    updateCarouselButtons(carousel.index);
+  } else if (window.innerWidth <= 1100 && largeScreen) {
+    largeScreen = false;
+  }
+});
+
+
+const villageName = document.querySelector('.village h2');
 window.addEventListener('scroll', () => {
-  if (arrowsToggle.getBoundingClientRect().top <= 300) {
-    if (carouselArrows.classList.contains('hidden')) {
-      carouselArrows.classList.remove('hidden');
+  const arrowsThreshold = largeScreen ? 300 : -125;
+  // Once the carousel is in view
+    if (arrowsToggle.getBoundingClientRect().top <= arrowsThreshold) {
+      if (carouselArrows.classList.contains('hidden')) {
+        carouselArrows.classList.remove('hidden');
+      }
+  
+      if (!carouselArrows.classList.contains('enter')) {
+        // show arrows
+        carouselArrows.classList.remove('exit');
+        carouselArrows.classList.add('enter');
+      }
+    } else if (arrowsToggle.getBoundingClientRect().top > arrowsThreshold && !carouselArrows.classList.contains('exit')) {
+      // hide arrows
+      carouselArrows.classList.remove('enter');
+      carouselArrows.classList.add('exit');
     }
 
-    if (!carouselArrows.classList.contains('enter')) {
-      // show arrows
-      carouselArrows.classList.remove('exit');
-      carouselArrows.classList.add('enter');
-    }
-  } else if (arrowsToggle.getBoundingClientRect().top > 300 && !carouselArrows.classList.contains('exit')) {
-    // hide arrows
-    carouselArrows.classList.remove('enter');
-    carouselArrows.classList.add('exit');
+  // Make village name sticky
+  if (villageName.getBoundingClientRect().top < -50 && !villageNameIsSticky) {
+    currentVillage.classed('visible', true);
+    villageNameIsSticky = true;
+  } else if (villageName.getBoundingClientRect().top >= -50 && villageNameIsSticky) {
+    currentVillage.classed('visible', false);
+    villageNameIsSticky = false;
   }
 });

@@ -1,6 +1,7 @@
 .villages {
   .container {
     display: flex;
+    overflow-x: hidden;
     @media screen and (max-width: $md) {
       padding-right: 20px;
       padding-left: 20px;
@@ -8,23 +9,17 @@
   }
   .village {
     margin: 0 auto;
-    max-width: 400px;
-    h2 {
-      position: sticky;
-      top: -1px;
-      background: rgb(255,255,255);
-      background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 100%);
-    }
+    max-width: 500px;
     .sct-description {
       margin: -1.5rem auto;
-      max-width: 270px;
+      max-width: 340px;
     }
-    .section-community .sct-description { min-height: 107px; }
-    .section-school .sct-description { min-height: 197px; }
-    .section-distance .sct-description { min-height: 190px; }
-    .section-waterMCL .sct-description { min-height: 560px; }
-    .section-solution .sct-description { min-height: 483px; }
-    .section-coloring .sct-description { min-height: 350px; }
+    .section-community .sct-description { min-height: 76px; }
+    .section-school .sct-description { min-height: 141px; }
+    .section-distance .sct-description { min-height: 166px; }
+    .section-waterMCL .sct-description { min-height: 464px; }
+    .section-solution .sct-description { min-height: 416px; }
+    .section-coloring .sct-description { min-height: 308px; }
     .defs {
       position: relative;
       z-index: -1;
@@ -37,5 +32,31 @@
         }
       }
     }
+  }
+}
+
+.villages-wrapper {
+  position: relative;
+}
+.current-village {
+  position: fixed;
+  z-index: 100;
+  top: -1px;
+  left: 0;
+  right: 0;
+  transform: translateY(-96px);
+  transition: transform 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  h2 {
+    margin-top: 0;
+  }
+  &.visible {
+    transform: translateY(0);
+  }
+}
+.village,
+.current-village {
+  h2 {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 100%);
   }
 }
