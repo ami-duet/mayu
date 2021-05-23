@@ -1746,9 +1746,14 @@ footer {
 
 /* line 3, src/sass/components/_footer.scss */
 footer .logo {
+  display: block;
   margin: 0 auto;
   width: 100px;
-  display: block;
+  height: 50px;
+  background-image: url("../assets/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 /* line 2, src/sass/components/_villages.scss */
