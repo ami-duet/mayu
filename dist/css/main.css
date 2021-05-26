@@ -1905,19 +1905,13 @@ footer .logo {
   padding-right: 20px;
 }
 
-/* line 6, src/sass/components/_map.scss */
-.maps-section .container p {
-  margin: 0 auto;
-  max-width: 215px;
-}
-
-/* line 11, src/sass/components/_map.scss */
+/* line 9, src/sass/components/_map.scss */
 .maps-section .map-peru {
   position: relative;
   margin-bottom: 55px;
 }
 
-/* line 14, src/sass/components/_map.scss */
+/* line 12, src/sass/components/_map.scss */
 .maps-section .map-peru .map-descriptions {
   position: absolute;
   top: 0;
@@ -1934,7 +1928,7 @@ footer .logo {
   /* Firefox */
 }
 
-/* line 25, src/sass/components/_map.scss */
+/* line 23, src/sass/components/_map.scss */
 .maps-section .map-peru .map-descriptions .map-description {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1948,8 +1942,26 @@ footer .logo {
   text-indent: 35px;
 }
 
-/* line 34, src/sass/components/_map.scss */
+/* line 30, src/sass/components/_map.scss */
+.maps-section .map-peru .map-descriptions .map-description p {
+  margin: 0 auto;
+  max-width: 215px;
+}
+
+/* line 36, src/sass/components/_map.scss */
 .maps-section .map-peru .map-descriptions::-webkit-scrollbar {
   display: none;
   /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+/* line 42, src/sass/components/_map.scss */
+.maps-section .map-piura {
+  margin-top: 25px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-top: 108%;
+  background-image: url("../assets/map_piura.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
 }
