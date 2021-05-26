@@ -1154,8 +1154,7 @@ h1 {
 
 /* line 18, src/sass/global/_type.scss */
 h2 {
-  margin: 30px 0 0;
-  padding: 30px 50px;
+  margin: 50px 0;
   font-family: "garamond-premier-pro-display", serif;
   font-size: 2.6rem;
   font-weight: 400;
@@ -1163,40 +1162,40 @@ h2 {
   color: #535E5E;
 }
 
-/* line 27, src/sass/global/_type.scss */
+/* line 26, src/sass/global/_type.scss */
 h3 {
   margin: 0 0 10px;
   font-size: 1.8rem;
 }
 
-/* line 31, src/sass/global/_type.scss */
+/* line 30, src/sass/global/_type.scss */
 h4 {
   margin: 0 0 5px;
   font-size: 1.5rem;
 }
 
-/* line 35, src/sass/global/_type.scss */
+/* line 34, src/sass/global/_type.scss */
 a {
   color: #383838;
 }
 
-/* line 38, src/sass/global/_type.scss */
+/* line 37, src/sass/global/_type.scss */
 p {
   margin: 1.5rem 0;
 }
 
-/* line 41, src/sass/global/_type.scss */
+/* line 40, src/sass/global/_type.scss */
 .em {
   font-weight: 600;
 }
 
-/* line 44, src/sass/global/_type.scss */
+/* line 43, src/sass/global/_type.scss */
 .drop-cap {
   font-size: 34px;
   line-height: 1;
 }
 
-/* line 47, src/sass/global/_type.scss */
+/* line 46, src/sass/global/_type.scss */
 .drop-cap.close {
   position: relative;
   right: -2px;
@@ -1800,42 +1799,48 @@ footer .logo {
 }
 
 /* line 13, src/sass/components/_villages.scss */
+.villages .village h2 {
+  margin: 30px 0 0;
+  padding: 30px 50px;
+}
+
+/* line 17, src/sass/components/_villages.scss */
 .villages .village .sct-description {
   margin: -1.5rem auto;
   max-width: 340px;
 }
 
-/* line 17, src/sass/components/_villages.scss */
+/* line 21, src/sass/components/_villages.scss */
 .villages .village .section-community .sct-description {
   min-height: 76px;
 }
 
-/* line 18, src/sass/components/_villages.scss */
+/* line 22, src/sass/components/_villages.scss */
 .villages .village .section-school .sct-description {
   min-height: 141px;
 }
 
-/* line 19, src/sass/components/_villages.scss */
+/* line 23, src/sass/components/_villages.scss */
 .villages .village .section-distance .sct-description {
   min-height: 166px;
 }
 
-/* line 20, src/sass/components/_villages.scss */
+/* line 24, src/sass/components/_villages.scss */
 .villages .village .section-waterMCL .sct-description {
   min-height: 464px;
 }
 
-/* line 21, src/sass/components/_villages.scss */
+/* line 25, src/sass/components/_villages.scss */
 .villages .village .section-solution .sct-description {
   min-height: 416px;
 }
 
-/* line 22, src/sass/components/_villages.scss */
+/* line 26, src/sass/components/_villages.scss */
 .villages .village .section-coloring .sct-description {
   min-height: 308px;
 }
 
-/* line 23, src/sass/components/_villages.scss */
+/* line 27, src/sass/components/_villages.scss */
 .villages .village .defs {
   position: relative;
   z-index: -1;
@@ -1843,22 +1848,22 @@ footer .logo {
   line-height: 1.2;
 }
 
-/* line 28, src/sass/components/_villages.scss */
+/* line 32, src/sass/components/_villages.scss */
 .villages .village .defs .def {
   margin: 15px 0;
 }
 
-/* line 30, src/sass/components/_villages.scss */
+/* line 34, src/sass/components/_villages.scss */
 .villages .village .defs .def p {
   margin: 0.7rem 0;
 }
 
-/* line 38, src/sass/components/_villages.scss */
+/* line 42, src/sass/components/_villages.scss */
 .villages-wrapper {
   position: relative;
 }
 
-/* line 41, src/sass/components/_villages.scss */
+/* line 45, src/sass/components/_villages.scss */
 .current-village {
   position: fixed;
   z-index: 100;
@@ -1873,21 +1878,76 @@ footer .logo {
   transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-/* line 49, src/sass/components/_villages.scss */
+/* line 53, src/sass/components/_villages.scss */
 .current-village h2 {
   margin-top: 0;
 }
 
-/* line 52, src/sass/components/_villages.scss */
+/* line 56, src/sass/components/_villages.scss */
 .current-village.visible {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-/* line 58, src/sass/components/_villages.scss */
+/* line 62, src/sass/components/_villages.scss */
 .village h2,
 .current-village h2 {
   background: white;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), color-stop(15%, white), to(white));
   background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, white 15%, white 100%);
+}
+
+/* line 2, src/sass/components/_map.scss */
+.map-section .container {
+  max-width: 425px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* line 7, src/sass/components/_map.scss */
+.map-section .map {
+  position: relative;
+}
+
+/* line 10, src/sass/components/_map.scss */
+.map-section .map-descriptions {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  z-index: 1;
+  width: calc(100% + 40px);
+  height: 100%;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* line 21, src/sass/components/_map.scss */
+.map-section .map-descriptions .map-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+  text-indent: 35px;
+}
+
+/* line 28, src/sass/components/_map.scss */
+.map-section .map-descriptions .map-description .description {
+  margin: 0 auto;
+  max-width: 215px;
+}
+
+/* line 34, src/sass/components/_map.scss */
+.map-section .map-descriptions::-webkit-scrollbar {
+  display: none;
+  /* Hide scrollbar for Chrome, Safari and Opera */
 }
