@@ -1880,16 +1880,17 @@ footer .logo {
 
 /* line 53, src/sass/components/_villages.scss */
 .current-village h2 {
-  margin-top: 0;
+  margin: 0;
+  padding: 30px 0;
 }
 
-/* line 56, src/sass/components/_villages.scss */
+/* line 57, src/sass/components/_villages.scss */
 .current-village.visible {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-/* line 62, src/sass/components/_villages.scss */
+/* line 63, src/sass/components/_villages.scss */
 .village h2,
 .current-village h2 {
   background: white;
