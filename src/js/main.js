@@ -76,6 +76,15 @@ carousel.on('run', () => {
 });
 
 
+// Update Peru map text height
+const peruMapText = d3.selectAll('.map-peru .map-description');
+const adjustHeightperuMapText = () => {
+  const height = document.querySelector('.map-peru .map-image').getBoundingClientRect().height;
+  d3.selectAll('.map-peru .map-description').style('height', `${height}px`);
+};
+adjustHeightperuMapText();
+
+
 // Update variables on window resize
 window.addEventListener('resize', () => {
   if (window.innerWidth > 1100 && !largeScreen) {
@@ -84,6 +93,8 @@ window.addEventListener('resize', () => {
   } else if (window.innerWidth <= 1100 && largeScreen) {
     largeScreen = false;
   }
+
+  adjustHeightperuMapText();
 });
 
 
@@ -116,3 +127,7 @@ window.addEventListener('scroll', () => {
     villageNameIsSticky = false;
   }
 });
+
+
+// Call animations
+// handleAnimations();
