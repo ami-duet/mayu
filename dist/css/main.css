@@ -1915,30 +1915,29 @@ footer .logo {
 .maps-section .map-peru .map-image {
   position: absolute;
   z-index: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding-top: 150%;
   width: 100%;
-  background-image: url("../assets/map_peru.svg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: contain;
+  height: 580px;
 }
 
-/* line 23, src/sass/components/_map.scss */
+/* line 17, src/sass/components/_map.scss */
+.maps-section .map-peru .map-image svg {
+  width: 100%;
+  height: auto;
+}
+
+/* line 22, src/sass/components/_map.scss */
 .maps-section .map-peru .map-descriptions {
   position: relative;
   z-index: 1;
 }
 
-/* line 26, src/sass/components/_map.scss */
+/* line 25, src/sass/components/_map.scss */
 .maps-section .map-peru .map-descriptions p {
   margin: 0 auto;
   max-width: 215px;
 }
 
-/* line 31, src/sass/components/_map.scss */
+/* line 30, src/sass/components/_map.scss */
 .maps-section .map-peru .map-description {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1950,7 +1949,7 @@ footer .logo {
   text-indent: 35px;
 }
 
-/* line 40, src/sass/components/_map.scss */
+/* line 39, src/sass/components/_map.scss */
 .maps-section .map-piura {
   margin-top: 25px;
   margin-left: -20px;
