@@ -1932,7 +1932,13 @@ footer .logo {
   z-index: 1;
 }
 
-/* line 27, src/sass/components/_map.scss */
+/* line 26, src/sass/components/_map.scss */
+.maps-section .map-peru .map-descriptions p {
+  margin: 0 auto;
+  max-width: 215px;
+}
+
+/* line 31, src/sass/components/_map.scss */
 .maps-section .map-peru .map-description {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1944,7 +1950,7 @@ footer .logo {
   text-indent: 35px;
 }
 
-/* line 36, src/sass/components/_map.scss */
+/* line 40, src/sass/components/_map.scss */
 .maps-section .map-piura {
   margin-top: 25px;
   margin-left: -20px;

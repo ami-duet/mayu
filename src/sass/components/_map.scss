@@ -23,6 +23,10 @@
     .map-descriptions {
       position: relative;
       z-index: 1;
+      p {
+        margin: 0 auto;
+        max-width: 215px;
+      }
     }
     .map-description {
       display: flex;
