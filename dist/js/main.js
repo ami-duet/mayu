@@ -131,4 +131,4 @@ window.addEventListener('scroll', () => {
 
 
 // Call animations
-handleAnimations();
+// handleAnimations();
