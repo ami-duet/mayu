@@ -1,5 +1,10 @@
-footer {
+.about {
   margin: 70px 0;
+  .container {
+    max-width: 425px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .logo {
     display: block;
     margin: 0 auto;
@@ -9,5 +14,13 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    box-shadow: none;
+  }
+  h2 {
+    margin-bottom: 25px;
+    text-align: left;
+  }
+  p {
+    text-indent: 35px;
   }
 }
