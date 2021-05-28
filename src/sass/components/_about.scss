@@ -1,5 +1,5 @@
 .about {
-  margin: 70px 0;
+  margin: 70px 0 35px;
   .container {
     max-width: 425px;
     padding-left: 20px;
@@ -29,6 +29,30 @@
       display: block;
       margin: 0 auto;
       width: 120px;
+    }
+  }
+
+  // Bottom menu
+  .bottom-links {
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 0 0;
+    padding-left: 0;
+    list-style: none;
+    li {
+      a {
+        display: block;
+        padding: 5px 0;
+        font-family: $fontDisplay;
+        font-size: 1.4rem;
+        color: $text;
+        text-transform: uppercase;
+        transition-property: all;
+        &:hover, &:focus,
+        &.highlighted {
+          color: $peach;
+        }
+      }
     }
   }
 }

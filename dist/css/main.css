@@ -1782,7 +1782,7 @@ button {
 
 /* line 1, src/sass/components/_about.scss */
 .about {
-  margin: 70px 0;
+  margin: 70px 0 35px;
 }
 
 /* line 3, src/sass/components/_about.scss */
@@ -1827,6 +1827,36 @@ button {
   display: block;
   margin: 0 auto;
   width: 120px;
+}
+
+/* line 36, src/sass/components/_about.scss */
+.about .bottom-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 35px 0 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* line 43, src/sass/components/_about.scss */
+.about .bottom-links li a {
+  display: block;
+  padding: 5px 0;
+  font-family: "garamond-premier-pro-display", serif;
+  font-size: 1.4rem;
+  color: #383838;
+  text-transform: uppercase;
+  -webkit-transition-property: all;
+  transition-property: all;
+}
+
+/* line 51, src/sass/components/_about.scss */
+.about .bottom-links li a:hover, .about .bottom-links li a:focus, .about .bottom-links li a.highlighted {
+  color: #DD5F3D;
 }
 
 /* line 2, src/sass/components/_villages.scss */
