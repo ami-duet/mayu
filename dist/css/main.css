@@ -1817,6 +1817,18 @@ button {
   text-indent: 35px;
 }
 
+/* line 26, src/sass/components/_about.scss */
+.about .duet-link {
+  text-decoration: none;
+}
+
+/* line 28, src/sass/components/_about.scss */
+.about .duet-link img {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+}
+
 /* line 2, src/sass/components/_villages.scss */
 .villages .container {
   display: -webkit-box;

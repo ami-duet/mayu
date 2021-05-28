@@ -113,7 +113,6 @@ window.addEventListener('scroll', () => {
       carouselArrows.classList.add('exit');
     }
   } else if (arrowsToggle.getBoundingClientRect().top <= arrowsThreshold) {
-    console.log('in if')
     if (carouselArrows.classList.contains('hidden')) {
       carouselArrows.classList.remove('hidden');
     }
@@ -125,7 +124,6 @@ window.addEventListener('scroll', () => {
     }
   } else if (arrowsToggle.getBoundingClientRect().top > arrowsThreshold && !carouselArrows.classList.contains('exit')) {
     // hide arrows
-    console.log('in else')
     carouselArrows.classList.remove('enter');
     carouselArrows.classList.add('exit');
   }
