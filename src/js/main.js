@@ -29,7 +29,6 @@ const section = sections
     .attr('class', d => `section section-${d.sct_id}`);
 section
   .append('div')
-    .attr('id', d => d.attr_id ? d.attr_id : null)
     .attr('class', 'sct-illustration')
   .html(d => d.illustration);
 section
