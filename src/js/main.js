@@ -2,6 +2,7 @@ const firstVillageId = 'cerro_de_leones';
 const currentVillageId = 'cerro_de_leones';
 const firstVillageIndex = villagesData.findIndex(village => village.village_id === firstVillageId);
 const arrowsToggle = document.querySelector('.arrows-toggle');
+const aboutToggle = document.querySelector('.about');
 const carouselArrows = document.querySelector('.glide__arrows');
 
 let largeScreen = window.innerWidth > 1100 ? true : false;
@@ -104,24 +105,35 @@ const villageName = document.querySelector('.village h2');
 window.addEventListener('scroll', () => {
   const arrowsThreshold = largeScreen ? 300 : -125;
   // Once the carousel is in view
-    if (arrowsToggle.getBoundingClientRect().top <= arrowsThreshold) {
-      if (carouselArrows.classList.contains('hidden')) {
-        carouselArrows.classList.remove('hidden');
-      }
-  
-      if (!carouselArrows.classList.contains('enter')) {
-        // show arrows
-        carouselArrows.classList.remove('exit');
-        carouselArrows.classList.add('enter');
-      }
-    } else if (arrowsToggle.getBoundingClientRect().top > arrowsThreshold && !carouselArrows.classList.contains('exit')) {
-      // hide arrows
+  if (aboutToggle.offsetTop - window.pageYOffset <= (window.innerHeight / 2) + 70) {
+    // hide arrows
+    if (!carouselArrows.classList.contains('exit')) {
       carouselArrows.classList.remove('enter');
       carouselArrows.classList.add('exit');
     }
+  } else if (arrowsToggle.getBoundingClientRect().top <= arrowsThreshold) {
+    console.log('in if')
+    if (carouselArrows.classList.contains('hidden')) {
+      carouselArrows.classList.remove('hidden');
+    }
+
+    if (!carouselArrows.classList.contains('enter')) {
+      // show arrows
+      carouselArrows.classList.remove('exit');
+      carouselArrows.classList.add('enter');
+    }
+  } else if (arrowsToggle.getBoundingClientRect().top > arrowsThreshold && !carouselArrows.classList.contains('exit')) {
+    // hide arrows
+    console.log('in else')
+    carouselArrows.classList.remove('enter');
+    carouselArrows.classList.add('exit');
+  }
 
   // Make village name sticky
-  if (villageName.getBoundingClientRect().top < -50 && !villageNameIsSticky) {
+  if (aboutToggle.offsetTop - window.pageYOffset <= (window.innerHeight / 2) + 70) {
+    currentVillage.classed('visible', false);
+    villageNameIsSticky = false;
+  } else if (villageName.getBoundingClientRect().top < -50 && !villageNameIsSticky) {
     currentVillage.classed('visible', true);
     villageNameIsSticky = true;
   } else if (villageName.getBoundingClientRect().top >= -50 && villageNameIsSticky) {
