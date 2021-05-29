@@ -1939,12 +1939,12 @@ button {
   position: relative;
   z-index: -1;
   font-size: 1.6rem;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
 /* line 39, src/sass/components/_villages.scss */
 .villages .village .defs .def {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 /* line 41, src/sass/components/_villages.scss */
