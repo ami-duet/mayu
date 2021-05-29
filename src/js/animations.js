@@ -15,7 +15,7 @@ ScrollTrigger.create({
 
 gsap.to('.piura-region', {
   scrollTrigger: {
-    trigger: '.map-description-third',
+    trigger: '.map-description-second',
     start: () => {
       const mapHeight = document.querySelector('.map-peru .map-image').offsetHeight;
       return `top ${2 * mapHeight / 5}px`;
