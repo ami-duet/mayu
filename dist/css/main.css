@@ -1943,21 +1943,34 @@ button {
 }
 
 /* line 39, src/sass/components/_villages.scss */
+.villages .village .defs .row {
+  margin-left: -9px;
+  margin-right: -9px;
+}
+
+/* line 42, src/sass/components/_villages.scss */
+.villages .village .defs .row [class^="col-"],
+.villages .village .defs .row [class*=" col-"] {
+  padding-right: 9px;
+  padding-left: 9px;
+}
+
+/* line 48, src/sass/components/_villages.scss */
 .villages .village .defs .def {
   margin: 20px 0;
 }
 
-/* line 41, src/sass/components/_villages.scss */
+/* line 50, src/sass/components/_villages.scss */
 .villages .village .defs .def p {
   margin: 0.7rem 0;
 }
 
-/* line 49, src/sass/components/_villages.scss */
+/* line 58, src/sass/components/_villages.scss */
 .villages-wrapper {
   position: relative;
 }
 
-/* line 52, src/sass/components/_villages.scss */
+/* line 61, src/sass/components/_villages.scss */
 .current-village {
   position: fixed;
   z-index: 100;
@@ -1972,19 +1985,19 @@ button {
   transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-/* line 60, src/sass/components/_villages.scss */
+/* line 69, src/sass/components/_villages.scss */
 .current-village h2 {
   margin: 0;
   padding: 30px 0;
 }
 
-/* line 64, src/sass/components/_villages.scss */
+/* line 73, src/sass/components/_villages.scss */
 .current-village.visible {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-/* line 70, src/sass/components/_villages.scss */
+/* line 79, src/sass/components/_villages.scss */
 .village h2,
 .current-village h2 {
   background: white;
