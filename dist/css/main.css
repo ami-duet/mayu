@@ -1243,7 +1243,7 @@ html {
 body {
   margin: 0;
   font-family: "garamond-premier-pro", serif;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   line-height: 1.4;
   font-weight: 400;
   color: #383838;
@@ -1938,7 +1938,7 @@ button {
 .villages .village .defs {
   position: relative;
   z-index: -1;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1.3;
 }
 
