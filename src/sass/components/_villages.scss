@@ -21,6 +21,12 @@
         top: -90px;
       }
     }
+    .sct-illustration {
+      transition: transform 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000);
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
     .sct-description {
       margin: -1.5rem auto;
       max-width: 340px;
