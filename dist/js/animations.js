@@ -27,4 +27,20 @@ gsap.to('.piura-region', {
   duration: 0.3,
   ease: 'power3.easeOut'
 });
+
+const animateVillages = () => {
+  const cdlIllustrations = document.querySelectorAll('.village-cerro_de_leones .sct-illustration');
+  cdlIllustrations.forEach(illustration => {
+    gsap.from(illustration, {
+      scrollTrigger: {
+        trigger: illustration,
+        start: 'center center'
+      },
+      duration: 0.2,
+      scale: 0.7,
+      opacity: 0,
+      ease: Power3.easeOut
+    });
+  });
+};
           
