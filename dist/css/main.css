@@ -1845,7 +1845,7 @@ button {
 /* line 43, src/sass/components/_about.scss */
 .about .bottom-links li a {
   display: block;
-  padding: 5px 0;
+  padding: 6px 0 3px;
   font-family: "garamond-premier-pro-display", serif;
   font-size: 1.4rem;
   color: #383838;
@@ -1857,6 +1857,11 @@ button {
 /* line 51, src/sass/components/_about.scss */
 .about .bottom-links li a:hover, .about .bottom-links li a:focus, .about .bottom-links li a.highlighted {
   color: #DD5F3D;
+}
+
+/* line 55, src/sass/components/_about.scss */
+.about .bottom-links li a.highlighted {
+  font-weight: 600;
 }
 
 /* line 2, src/sass/components/_villages.scss */
