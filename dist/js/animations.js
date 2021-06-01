@@ -43,4 +43,29 @@ const animateVillages = () => {
     });
   });
 };
+
+// Animate path on Piura's map on click
+var path = document.querySelector('#pathRecrut');
+var pathLength = path.getTotalLength();
+path.style.strokeDasharray = pathLength + ' ' + pathLength;
+path.style.strokeDashoffset = pathLength;
+
+const animatePiuraPath = () => {
+  d3.select('#pathRecrut').classed('animate', true);
+  // gsap.to('.cdl-circle', {
+  //   scale: 1.5,
+  //   x: -1,
+  //   duration: 0.2,
+  //   delay: 0.7,
+  //   ease: Power2.easeOut
+  // });
+};
+
+let piuraAnimationIsComplete = false;
+document.querySelector('.cdl-touch').addEventListener('click', () => {
+  if (!piuraAnimationIsComplete) {
+    animatePiuraPath();
+    piuraAnimationIsComplete = true;
+  }
+});
           
