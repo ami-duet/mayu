@@ -41,7 +41,7 @@ currentVillage
   .append('h2')
     .text(villagesData.find(village => village.village_id === currentVillageId).village_name);
 
-animateVillages();
+// animateVillages();
 
 // Initialize the carousel
 const carousel = new Glide('.glide', {
