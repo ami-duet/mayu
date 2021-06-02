@@ -7,7 +7,8 @@ ScrollTrigger.create({
   end: () => {
     const height = window.innerHeight;
     const mapHeight = document.querySelector('.map-peru .map-image').offsetHeight;
-    return `bottom ${mapHeight + (height - mapHeight) / 2}px`;
+    const margin = window.innerWidth < 400 ? 90 : 0;
+    return `bottom ${mapHeight + (height - mapHeight) / 2 - margin}px`;
   },
   pin: true,
   pinSpacing: false
