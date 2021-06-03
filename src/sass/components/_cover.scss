@@ -46,7 +46,22 @@
       background-size: 75% auto;
     }
   }
-  @media screen and (max-width: $lg) {
+  @media screen and (max-height: 1000px) {
+    .title-container,
+    .intro-container {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .title-container {
+      margin-left: 0;
+      padding-right: 10%;
+    }
+    .illustration {
+      height: 100vh;
+      background-size: 85% auto;
+    }
+  }
+  @media screen and (max-width: $lg), (max-height: 1000px) {
     height: auto;
     .title {
       justify-content: flex-start;
@@ -55,11 +70,15 @@
       height: 100vh;
     }
     .intro-container {
+      max-width: 900px;
+      margin: 0 auto;
       padding-top: 40px;
       .intro {
         max-width: none;
       }
     }
+  }
+  @media screen and (max-width: $lg) {
     .illustration {
       bottom: auto;
       height: 100vh;
