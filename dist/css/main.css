@@ -2106,7 +2106,12 @@ button {
   z-index: 3;
 }
 
-/* line 66, src/sass/components/_map.scss */
+/* line 62, src/sass/components/_map.scss */
+.maps-section .map-piura svg.piura-communities-cerro {
+  z-index: 4;
+}
+
+/* line 69, src/sass/components/_map.scss */
 #pathRecrut.animate {
   -webkit-animation: dash 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
           animation: dash 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;

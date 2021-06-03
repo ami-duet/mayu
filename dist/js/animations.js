@@ -60,6 +60,12 @@ const animatePiuraPath = () => {
   //   delay: 0.7,
   //   ease: Power2.easeOut
   // });
+  gsap.to('.community-cerro', {
+    fill: '#DD5F3D',
+    duration: 0.2,
+    delay: 0.9,
+    ease: Power3.easeOut
+  });
 };
 
 let piuraAnimationIsComplete = false;
