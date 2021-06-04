@@ -39,6 +39,9 @@
     background-repeat: no-repeat;
     background-size: calc(110% - 700px) auto;
     background-position: left bottom;
+    @media screen and (min-width: 3000px) and (min-height: 2000px) {
+      background-size: calc(110% - 900px) auto;
+    }
     @media screen and (max-width: 1700px) {
       background-size: calc(125% - 700px) auto;
     }

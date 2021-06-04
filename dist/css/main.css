@@ -1704,6 +1704,13 @@ button {
   background-position: left bottom;
 }
 
+@media screen and (min-width: 3000px) and (min-height: 2000px) {
+  /* line 34, src/sass/components/_cover.scss */
+  .cover .illustration {
+    background-size: calc(110% - 900px) auto;
+  }
+}
+
 @media screen and (max-width: 1700px) {
   /* line 34, src/sass/components/_cover.scss */
   .cover .illustration {
@@ -1719,7 +1726,7 @@ button {
 }
 
 @media screen and (max-height: 1000px) {
-  /* line 50, src/sass/components/_cover.scss */
+  /* line 53, src/sass/components/_cover.scss */
   .cover .title-container,
   .cover .intro-container {
     -webkit-box-flex: 0;
@@ -1727,12 +1734,12 @@ button {
             flex: 0 0 100%;
     max-width: 100%;
   }
-  /* line 55, src/sass/components/_cover.scss */
+  /* line 58, src/sass/components/_cover.scss */
   .cover .title-container {
     margin-left: 0;
     padding-right: 10%;
   }
-  /* line 59, src/sass/components/_cover.scss */
+  /* line 62, src/sass/components/_cover.scss */
   .cover .illustration {
     height: 100vh;
     background-size: 85% auto;
@@ -1744,7 +1751,7 @@ button {
   .cover {
     height: auto;
   }
-  /* line 66, src/sass/components/_cover.scss */
+  /* line 69, src/sass/components/_cover.scss */
   .cover .title {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1753,20 +1760,20 @@ button {
     padding-top: 33vh;
     height: 100vh;
   }
-  /* line 72, src/sass/components/_cover.scss */
+  /* line 75, src/sass/components/_cover.scss */
   .cover .intro-container {
     max-width: 900px;
     margin: 0 auto;
     padding-top: 40px;
   }
-  /* line 76, src/sass/components/_cover.scss */
+  /* line 79, src/sass/components/_cover.scss */
   .cover .intro-container .intro {
     max-width: none;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 82, src/sass/components/_cover.scss */
+  /* line 85, src/sass/components/_cover.scss */
   .cover .illustration {
     bottom: auto;
     height: 100vh;
@@ -1777,28 +1784,28 @@ button {
 }
 
 @media screen and (max-width: 1200px) and (orientation: landscape) {
-  /* line 82, src/sass/components/_cover.scss */
+  /* line 85, src/sass/components/_cover.scss */
   .cover .illustration {
     width: 60vw;
   }
 }
 
 @media screen and (max-width: 1200px) and (orientation: landscape) and (min-width: 800px) {
-  /* line 82, src/sass/components/_cover.scss */
+  /* line 85, src/sass/components/_cover.scss */
   .cover .illustration {
     width: 56vw;
   }
 }
 
 @media screen and (max-width: 1200px) and (orientation: landscape) and (min-width: 1000px) {
-  /* line 82, src/sass/components/_cover.scss */
+  /* line 85, src/sass/components/_cover.scss */
   .cover .illustration {
     width: 75vw;
   }
 }
 
 @media screen and (max-width: 576px) {
-  /* line 101, src/sass/components/_cover.scss */
+  /* line 104, src/sass/components/_cover.scss */
   .cover .title .credentials {
     margin-top: 2px;
     margin-right: 18px;
