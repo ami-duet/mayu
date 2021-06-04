@@ -2027,6 +2027,22 @@ button {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, white 15%, white 100%);
 }
 
+/* line 72, src/sass/components/_villages.scss */
+.illustration-instructions.touch {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 76, src/sass/components/_villages.scss */
+  .illustration-instructions.touch {
+    display: block;
+  }
+  /* line 79, src/sass/components/_villages.scss */
+  .illustration-instructions.mouse {
+    display: none;
+  }
+}
+
 /* line 2, src/sass/components/_map.scss */
 .maps-section .container {
   max-width: 425px;

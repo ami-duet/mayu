@@ -67,3 +67,17 @@
     background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 100%);
   }
 }
+
+.illustration-instructions {
+  &.touch {
+    display: none;
+  }
+  @media screen and (max-width: $md) {
+    &.touch {
+      display: block;
+    }
+    &.mouse {
+      display: none;
+    }
+  }
+}
