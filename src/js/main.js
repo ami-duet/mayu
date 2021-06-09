@@ -30,7 +30,7 @@ const section = sections
 section
   .append('div')
     .attr('class', 'sct-illustration')
-  .html(d => d.illustration);
+  .html(d =>  d.sct_id === 'coloring' ? d.illustration : null );
 section
   .append('div')
     .attr('class', 'sct-description')
